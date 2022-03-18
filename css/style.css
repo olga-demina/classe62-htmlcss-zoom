@@ -1,0 +1,132 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+
+    color: white;
+    background-color: black;
+}
+
+.header-btn {
+    margin-top: .5rem;
+    margin-right: .5rem;
+    padding: .3rem;
+    font-size: .8rem;
+    border-radius: 5px;
+    background-color: #4A4A4A;
+
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: calc(100vh - 160px);
+    background-color: black;
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%;
+    /* width: 100%; */
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.user-wrapper {
+    position: relative;
+    /* width: 250px;
+    height: 150px; */
+    width: calc(100% / 5 - 1rem);
+    margin: .5rem;
+
+    /* TEST */
+    background-color: aquamarine;
+}
+
+.user-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .3rem;
+    color: white;
+    background-color: rgba(0,0,0, .4);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    color: white;
+    background-color: #222;
+}
+
+.footer-left {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.footer-center {
+    display: flex;
+}
+
+.footer-right {
+    /* height: 100%; */
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #4A4A4A;
+    color: red;
+}
+
+.action-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 1rem;
+    font-size: .8rem;
+}
+
+.action-submenu {
+    margin-left: 1rem;
+}
+
+.action-btn i {
+    margin-bottom: .5rem;
+}
